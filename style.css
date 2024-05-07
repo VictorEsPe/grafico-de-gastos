@@ -1,0 +1,94 @@
+:root {
+  --Soft-red: hsl(10, 79%, 65%);
+  --Cyan: hsl(186, 34%, 60%);
+  --Dark-brown: hsl(25, 47%, 15%);
+  --Medium-brown: hsl(28, 10%, 53%);
+  --Cream: hsl(27, 66%, 92%);
+  --Very-pale-orange: hsl(33, 100%, 98%);
+  --Box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.212);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100dvh;
+  font-family: 'DM Sans', sans-serif;
+  background-color: var(--Cream);
+}
+
+.container {
+  display: flex;
+  flex-flow: column;
+  gap: 1.6rem;
+}
+
+.my-balance-header {
+  background-color: var(--Soft-red);
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+  border-radius: 1.6rem;
+  color: var(--Very-pale-orange);
+  box-shadow: var(--Box-shadow); 
+
+  & .my-balance {
+    font-size: 1.92rem;
+
+    & span {
+      font-weight: 700;
+      font-size: 2.304rem;
+    }
+  }
+
+  & img {
+    width: 6.104rem;
+  }
+}
+
+.spendings-card {
+  background-color: var(--Very-pale-orange);
+  padding: 2.5rem;
+  display: flex;
+  flex-flow: column;
+  gap: 2rem;
+  box-shadow: var(--Box-shadow);
+  border-radius: 1.6rem;
+
+  & h1 {
+    font-size: 2.304rem;
+  }
+
+  & hr {
+    border: 1px solid var(--Cream);
+    background-color: var(--Cream);
+    height: 1px;
+  }
+
+  & .total-spendings {
+    font-size: 2.765rem;
+    display: flex;
+    justify-content: space-between;
+
+    & #total {
+      font-weight: 700;
+      font-size: 2.304rem;
+    }
+
+    & .last-month-percentage {
+      text-align: right;
+
+      & span {
+        font-weight: 700;
+      }
+    }
+  }
+
+}
