@@ -4,7 +4,7 @@ const differencePercentageEL = document.getElementById('difference-percentage');
 
 const lastMonthSpendings = 193.05;
 
-fetch('./data.json')
+fetch('../src/json/data.json')
   .then(response => response.json())
   .then(data => {
     drawChart(data);
